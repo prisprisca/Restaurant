@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> 
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav-bar">
+        <div class="nav-logo">
+          <span>At-Peace</span>
+        </div>
+        <div class="nav-links" id="nav-links">
+            <i class="fas fa-times" onclick="closeMenu()"></i>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+          <button type="button" class="btn">Order Now</button>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </div>
+      <div class="banner-title">
+          <h1>Tasty <span>food </br>just. Served </span>at your satisfaction<span>!</span></h1>
+          <button type="button" class="btn">Explore</button>
+      </div>
+      <div class="vertical-bar">
+          <div class="search-icon">
+            <i class="fas fa-list-ul"></i>
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+      </div>
+      <div class="notifications">
+          <div class="content">
+              <small>Do you have any inquiries about our services? Kindly reach out</small>
+
+          </div>
+          <div class="notification-img">
+              <img src="/images/not.jpeg" alt="notification">
+          </div>
+      </div>
+    </div>
+    <script>
+        var show = document.getElementById("nav-links");
+        function showMenu(){
+            show.style.right="0";
+        }
+        function closeMenu(){
+            show.style.right="-200px";
+        }
+    </script>
+  </body>
+</html>
